@@ -1,0 +1,116 @@
+jshell> java.time.LocalDate.now()
+$1 ==> 2021-08-27
+
+jshell> 104 * 104
+$2 ==> 10816
+
+jshell> 97 * 97
+$3 ==> 9409
+
+jshell> int a = 10;
+a ==> 10
+
+jshell> int b = 20;
+b ==> 20
+
+jshell> a + b
+$6 ==> 30
+
+jshell> 100 + b
+$7 ==> 120
+
+jshell> a + 100
+$8 ==> 110
+
+jshell> a + 100 / b
+$9 ==> 15
+
+jshell> "Hello" + "World"
+$10 ==> "HelloWorld"
+
+jshell> "Hello" * 2
+|  Error:
+|  bad operand types for binary operator '*'
+|    first type:  java.lang.String
+|    second type: int
+|  "Hello" * 2
+|  ^---------^
+
+jshell> "Hello" + " " + "World"
+$11 ==> "Hello World"
+
+jshell> "Hello" + " World"
+$12 ==> "Hello World"
+
+jshell> a
+a ==> 10
+
+jshell> b
+b ==> 20
+
+jshell> "Hello     " +
+   ...> "   World"
+$15 ==> "Hello        World"
+
+jshell> "Hello" + a
+$16 ==> "Hello10"
+
+jshell> a + b
+$17 ==> 30
+
+jshell> "Hello" + b
+$18 ==> "Hello20"
+
+jshell> String message = "Hello"
+message ==> "Hello"
+
+jshell> message + a
+$20 ==> "Hello10"
+
+jshell> message + b
+$21 ==> "Hello20"
+
+jshell> a + message
+$22 ==> "10Hello"
+
+jshell> message + a + " " + "World"
+$23 ==> "Hello10 World"
+
+jshell> message + a * b + "World"
+$24 ==> "Hello200World"
+
+jshell> message + 200 + "World"
+$25 ==> "Hello200World"
+
+jshell> message + a + b + "World"
+$26 ==> "Hello1020World"
+
+jshell> message + (a + b) + "World"
+$27 ==> "Hello30World"
+
+jshell> a + b + message + "World"
+$28 ==> "30HelloWorld"
+
+jshell> String name = "Rakesh"
+name ==> "Rakesh"
+
+jshell> int age = 30
+age ==> 30
+
+jshell> int salary = 40000
+salary ==> 40000
+
+jshell> "Rakesh is 30 years old, and his annual salary is 480000"
+$32 ==> "Rakesh is 30 years old, and his annual salary is 480000"
+
+jshell> name + " is "     + age + " years old, and his annual salary is " + (salary*12)
+$33 ==> "Rakesh is 30 years old, and his annual salary is 480000"
+
+jshell> name + " is "     + age + " years old, and his annual salary is " + salary * 12
+$34 ==> "Rakesh is 30 years old, and his annual salary is 480000"
+
+jshell> String.format("%s is %d years old, and his annual salary is %d", name, age, salary * 12)
+$35 ==> "Rakesh is 30 years old, and his annual salary is 480000"
+
+jshell> String.format("%s %d World", message, a + b)
+$36 ==> "Hello 30 World"

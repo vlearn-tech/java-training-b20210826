@@ -113,4 +113,4 @@ jshell> String.format("%s is %d years old, and his annual salary is %d", name, a
 $35 ==> "Rakesh is 30 years old, and his annual salary is 480000"
 
 jshell> String.format("%s %d World", message, a + b)
-$36 ==> "Hello 30 World"
+$36 ==> "Hello 30 World" 

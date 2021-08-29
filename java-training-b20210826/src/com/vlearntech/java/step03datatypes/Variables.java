@@ -9,7 +9,5 @@ public class Variables {
 
 		final int MAX_LENGTH_ALLOWED = 10; // final means this variable is a constant and cannot be changed
 
-		System.out.println(Double.SIZE);
-
 	}
 }

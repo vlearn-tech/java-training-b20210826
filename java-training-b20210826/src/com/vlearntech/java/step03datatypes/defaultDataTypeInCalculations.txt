@@ -1,0 +1,27 @@
+jshell> int a = 100;
+a ==> 100
+
+jshell> int b = 7;
+b ==> 7
+
+jshell> a/b
+$3 ==> 14 // because both a and b are integers and hence it is an integer calculation
+
+jshell> 100/7
+$4 ==> 14 // because both 100 and 7 are integers and hence it is an integer calculation
+
+jshell> 100f/7
+$5 ==> 14.285714 // because 100f is a float, so now it is a decimal calculation
+
+jshell> 100/7f
+$6 ==> 14.285714 // because 7f is a float, so now it is a decimal calculation
+
+jshell> 100.0/7
+$7 ==> 14.285714285714286  // because 100.0 is "double", it is a decimal calculation and has more precision than float
+
+jshell> 100.0f/7
+$8 ==> 14.285714 // because 100.0f is "float" and not "double", it is a decimal calculation and has lower precision
+
+jshell> 100.0f/7.0
+$9 ==> 14.285714285714286  // because 100.0f is "float", but 7.0 is "double", it is hence a decimal calculation and has higher precision than float
+
